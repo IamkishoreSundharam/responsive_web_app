@@ -1,0 +1,227 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,rgb(255, 102, 186) 0%,rgb(253, 194, 66) );
+}
+.head{
+width: 100vw;
+height: 75px;
+display: flex;
+background-color: #fff;
+position: fixed; 
+top: 0px;
+z-index: 2;
+}
+.nav-list{
+    width:1400px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    font-size: 32px;
+    list-style-type: none;
+    letter-spacing: 3px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-left: 300px;
+    transition: 0.5s;
+}
+.nav-list2{
+    display: inline-flex;
+    list-style-type: none;
+    margin-left: 150px;
+    gap: 20px;
+}
+.nav-list2 li:nth-child(1){
+    width: 40px;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 8px;
+}
+.nav-list2 li:nth-child(2){
+padding-top: 5px;
+font-size: 28px;
+}
+.nav{
+    cursor: pointer;
+}
+
+.bg-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.bg-img img{
+    height: 100%;
+    width: 100%;
+}
+.para{
+    position: absolute;
+    width: 900px;
+    height: fit-content;
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    background-color: rgba(247, 65, 96, 0.479);
+    margin-top:300px ;
+    margin-left: 100px;
+    color: white;
+    padding: 50px;
+}
+.para h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.sec-2{
+    height: 1200px;
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    background-image: linear-gradient(to right,rgb(255, 102, 186) 0%,rgb(253, 194, 66) );
+}
+.sec-2 > h1{
+    font-size: 65px;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 40px;
+}
+.sec-2 button{
+    width:250px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.308);
+    margin-top:100px ;
+    cursor: pointer;
+}
+.orders{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:40px ;
+}
+.cards{
+    width: 430px;
+    /* height: 550px; */
+    height: fit-content;
+    background-color: white; 
+    border-radius: 0% 15% 0% 15% ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* padding: 20px; */
+}
+.cards h2{
+    font-size: 30px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+.cards p{
+    font-size: 24px;
+}
+.food-img{
+    width: 370px;
+    height: 350px;
+    margin-top: 25px;
+    border-radius: 0% 15% 0% 0% ;
+}
+.food-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0% 15% 0% 0% ;
+}
+
+/* TABLET VIEW */
+@media screen and (max-width:1700px){
+    .head{
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid aqua; */
+        margin-left: 0px;
+        gap:20px;
+        max-width: fit-content;
+    }
+    .nav-list li:hover{
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 10px black;
+    }
+    .nav-list2{
+        margin-left: 0px;
+        /* visibility: hidden; */
+    }
+    .nav-list2 li:nth-child(1){
+        padding:4px
+    }
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width:1600px) 
+{
+
+    .nav-list{
+        max-width: fit-content;
+    }
+    .para{
+        height: 120px;
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    .orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    }
+    .cards{
+        width: 330px;
+    }
+    .cards h2{
+        font-size: 20px;
+    }
+    .cards p{
+        font-size: 18px;
+    }
+    .food-img{
+        width: 300px;
+    }
+    .sec-2{
+        height: 2200px;
+    }
+    .sec-2 h1{
+        font-size: 30px;
+    }
+    /* .para{
+        width: 600px;
+        margin-top: 100px;
+        margin-left: 50px;
+    } */
+    .para h1{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .para p{
+        font-size: 10px;
+    }
+}
